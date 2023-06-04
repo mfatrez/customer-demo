@@ -11,8 +11,5 @@ conn = mariadb.connect(host='172.16.3.156',
 cur = conn.cursor()
 
 @app.route('/')
-def main():
+def index():
     return render_template('index.html')
-
-if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0', port=4443)

@@ -1,7 +1,7 @@
 FROM python:3.8-bullseye
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt update && apt install libmariadb3 libmariadb-dev telnet
+RUN apt update && apt install -y libmariadb3 libmariadb-dev telnet
 
 WORKDIR /python-docker
 

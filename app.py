@@ -21,3 +21,7 @@ def index():
     conn.commit()
 
     return render_template('index.html')
+
+@app.route('/ping')
+def monitoring():
+    return "<p>OK</p>"

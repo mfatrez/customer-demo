@@ -6,7 +6,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 config = {
-        'host': '10.77.4.145',
+        'host': '172.16.3.156',
         'port': 3306,
         'user': 'docapostedemo',
         'password': 'd0cAp0st3_dem0!',
